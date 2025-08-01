@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos - Patricia</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #fdf6ec;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+    }
+    a {
+      color: #996600;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← Retour à l'accueil</a>
+  </header>
+
+  <h1>À propos de Patricia</h1>
+
+  <p>
+    Patricia est magnétiseuse passionnée, installée à Rom (79). Grâce à son don naturel et à une écoute attentive, elle accompagne les personnes en recherche de mieux-être physique et émotionnel.
+  </p>
+
+  <p>
+    Depuis plusieurs années, elle pratique les soins énergétiques avec bienveillance et respect. Chaque séance est adaptée à vos besoins, dans un cadre chaleureux et serein.
+  </p>
+
+  <p>
+    Son objectif : vous aider à retrouver équilibre, vitalité et harmonie intérieure.
+  </p>
+
+  <footer style="margin-top: 50px;">
+    <a href="index.html">← Retour à l'accueil</a>
+  </footer>
+</body>
+</html>
