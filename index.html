@@ -22,10 +22,52 @@
       text-decoration: underline;
     }
     header {<div class="slideshow-container">
-  <img class="slide-image" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Nature 1">
-  <img class="slide-image" src="https://images.unsplash.com/photo-1523978591478-c753949ff840?auto=format&fit=crop&w=1200&q=80" alt="Nature 2">
-  <img class="slide-image" src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80" alt="Nature 3">
+  <img class="slide-image active" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Cascade paisible">
+  <img class="slide-image" src="https://images.unsplash.com/photo-1523978591478-c753949ff840?auto=format&fit=crop&w=1200&q=80" alt="Forêt brumeuse">
+  <img class="slide-image" src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80" alt="Montagne tranquille">
 </div>
+
+<style>
+  .slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .slide-image {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .slide-image.active {
+    display: block;
+    position: relative;
+    opacity: 1;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll('.slide-image');
+    let index = 0;
+
+    function showSlide() {
+      slides.forEach((img, i) => {
+        img.classList.remove('active');
+      });
+      slides[index].classList.add('active');
+      index = (index + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 5000); // change every 5 seconds
+  });
+</script>
+
 
 <style>
   .slideshow-container {
