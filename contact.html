@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Patricia</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #fdf6ec;
+      color: #333;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    a {
+      color: #996600;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #996600;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #7a5500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← Retour à l'accueil</a>
+  </header>
+
+  <h1>Contact</h1>
+
+  <p>Pour toute demande d'information ou prise de rendez-vous, vous pouvez remplir ce formulaire :</p>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <label>Nom :</label>
+    <input type="text" name="nom" required />
+
+    <label>Email :</label>
+    <input type="email" name="email" required />
+
+    <label>Message :</label>
+    <textarea name="message" rows="6" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <footer style="margin-top: 50px;">
+    <a href="index.html">← Retour à l'accueil</a>
+  </footer>
+</body>
+</html>
