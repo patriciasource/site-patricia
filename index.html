@@ -1,61 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patricia – Soins Énergétiques</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patricia - Soins Énergétiques</title>
+  <!-- Police élégante depuis Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
   <style>
-    body {<header>
-  <img src="logo.png" alt="Logo Patricia" style="height: 80px; margin: 20px;">
-</header>
-
-      font-family: 'Georgia', serif;
+    body {
+      font-family: 'Playfair Display', serif;
       background-color: #fdf6ec;
       color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #fff8e1;
+      padding: 20px;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
       padding: 20px;
+      background-color: #fff8e1;
+      font-size: 16px;
     }
-    h2 {
-      color: #6a4e42;
+
+    .button {
+      display: inline-block;
+      background-color: #996600;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 30px;
     }
-    .box {
-      background-color: #fff;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    .button:hover {
+      background-color: #b38f00;
     }
-    img.logo {
-      max-width: 200px;
-      display: block;
-      margin: 0 auto 20px auto;
+
+    nav a {
+      margin: 0 10px;
+      color: #996600;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="Logo Patricia" />
+    <h2>Patricia – Soins Énergétiques</h2>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <!-- LOGO -->
-  <img src="logo.png" alt="Logo Patricia" class="logo">
+  <main>
+    <h1>Bienvenue</h1>
+    <p>
+      Je vous accueille avec bienveillance pour des soins énergétiques personnalisés.
+      Grâce au magnétisme et à l'écoute, je vous aide à retrouver équilibre, harmonie et apaisement.
+    </p>
 
-  <!-- CONTENU PRINCIPAL -->
-  <div class="box">
-    <h2>Soins énergétiques et Magnétisme</h2>
-    <p>Patricia vous accompagne avec bienveillance et écoute pour apaiser vos douleurs, stress, troubles du sommeil, etc.</p>
-    <p>Soins en présentiel  ou à distance.</p>
-    <p><strong>Sur rendez-vous uniquement</strong></p>
-    <p><strong>📞 07 66 74 10 32</strong></p>
-  </div>
-<footer style="text-align: center; margin-top: 50px;">
-  <a href="apropos.html" style="color: #996600; text-decoration: none;">À propos</a>
-</footer>
-<footer style="margin-top: 50px;">
-  <p>
-    <a href="apropos.html">À propos</a> | 
-    <a href="contact.html">Contact</a>
-  </p>
-</footer>
+    <p>
+      Chaque séance est un moment pour vous reconnecter à votre bien-être intérieur.
+    </p>
+
+    <div style="text-align: center;">
+      <a href="https://calendly.com/philippesanchez899" target="_blank" class="button">Réserver une consultation</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Patricia – Soins Énergétiques</p>
+  </footer>
 </body>
 </html>
-
