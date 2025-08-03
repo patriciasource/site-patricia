@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Patricia</title>
+  <meta name="description" content="Contactez Patricia, magnétiseuse à Aubusson, pour prendre rendez-vous ou poser une question." />
   <style>
     body {
       font-family: Georgia, serif;
@@ -13,71 +14,69 @@
       max-width: 800px;
       margin: auto;
     }
-    a {
-      color: #996600;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    h1 {
+      text-align: center;
     }
     form {
-      margin-top: 20px;
+      margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
     }
     input, textarea {
       width: 100%;
       padding: 10px;
-      margin-top: 8px;
-      margin-bottom: 15px;
+      margin-top: 5px;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 4px;
+      font-family: Georgia, serif;
     }
     button {
+      margin-top: 20px;
+      padding: 10px 20px;
       background-color: #996600;
       color: white;
-      padding: 10px 20px;
       border: none;
-      border-radius: 5px;
+      border-radius: 4px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #7a5500;
+      background-color: #664400;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #996600;
+      text-decoration: none;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <a href="index.html">← Retour à l'accueil</a>
-  </header>
+  <h1>Contactez Patricia</h1>
+  <p>Remplissez ce formulaire pour toute question ou prise de rendez-vous.</p>
 
-  <h1>Contact</h1>
+  <form action="https://formspree.io/f/xldlwagk" method="POST">
+    <label for="nom">Nom :</label>
+    <input type="text" name="nom" id="nom" required />
 
-  <p>Pour toute demande d'information ou prise de rendez-vous, vous pouvez remplir ce formulaire :</p>
+    <label for="email">Email :</label>
+    <input type="email" name="email" id="email" required />
 
-  <form name="contact" method="POST" data-netlify="true">
-    <label>Nom :</label>
-    <input type="text" name="nom" required />
-
-    <label>Email :</label>
-    <input type="email" name="email" required />
-
-    <label>Message :</label>
-    <textarea name="message" rows="6" required></textarea>
+    <label for="message">Message :</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
 
     <button type="submit">Envoyer</button>
   </form>
-<div style="margin-top: 30px; text-align: center;">
-  <a href="https://calendly.com/philippesanchez899" target="_blank" style="
-    background-color: #996600;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-  ">Réserver une consultation</a>
-</div>
 
-  <footer style="margin-top: 50px;">
-    <a href="index.html">← Retour à l'accueil</a>
+  <footer>
+    <a href="index.html">Accueil</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
   </footer>
 </body>
 </html>
+
